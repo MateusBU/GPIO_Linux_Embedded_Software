@@ -1,29 +1,19 @@
-#ifndef BSP_H
-#define BSP_H
+#ifndef APP_H
+#define APP_H
 
 /* ============================================================
  *  Includes
  * ============================================================*/
-#include <stdint.h>
 #include <stdio.h>
-
-/* ============================================================
+ /* ============================================================
  *  Defines / Macros
  * ============================================================*/
-#define GPIO_YELLOW_LED (18)
 
-#define LED_ON                 (1)
-#define LED_OFF                (0)
-
-#define TIMEOUT_MS(t)          ((t) * 1000)
 
 /* ============================================================
  *  Typedefs / Enums / Structs
  * ============================================================*/
 
-typedef enum {
-    eLED_YELLOW,
-} outputs_t;
 
 /* ============================================================
  *  Extern Variables
@@ -34,9 +24,7 @@ typedef enum {
  *  Function Prototypes
  * ============================================================*/
 
-void bsp_init(void);
-void bsp_closeGPIOs(void);
-void bsp_OutputsHandler(void);
+void app_Handler();
 
 
-#endif /* BSP_H */
+#endif /* APP_H */
