@@ -11,7 +11,7 @@
  *  Defines / Macros
  * ============================================================*/
 #define GPIO_YELLOW_LED (18)
-#define GPIO_BUTTON_1 (2)
+#define GPIO_BUTTON_1 (22)
 
 #define LED_ON (1)
 #define LED_OFF (0)
